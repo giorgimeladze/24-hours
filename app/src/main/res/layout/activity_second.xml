@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".View.Activities.SecondActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/frame_layout_of_activity_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view_pager_id"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/view_pager_id"
+        android:layout_margin="8dp"
+        android:background="@drawable/circular_corners"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/siaxlis_icon_id"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_corners_for_bnv_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:drawableTop="@drawable/googleg_disabled_color_18"
+            android:text="სიახლე"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dzebnis_icon_id"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_corners_for_bnv_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:drawableTop="@drawable/googleg_disabled_color_18"
+            android:text="ძიება"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chven_icon_id"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_corners_for_bnv_buttons"
+            app:layout_constraintStart_toEndOf="@id/siaxlis_icon_id"
+            app:layout_constraintTop_toTopOf="parent"
+            android:drawableTop="@drawable/googleg_disabled_color_18"
+            android:text="ჩვენ"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/favorite_icon_id"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_corners_for_bnv_buttons"
+            app:layout_constraintEnd_toStartOf="@id/dzebnis_icon_id"
+            app:layout_constraintTop_toTopOf="parent"
+            android:drawableTop="@drawable/googleg_disabled_color_18"
+            android:text="ფავორიტი"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navigation_logo_id"
+        android:layout_width="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/logo_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/frame_layout_of_activity_id"
+        app:layout_constraintStart_toStartOf="@+id/frame_layout_of_activity_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">24 საათი</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint">Enter an Institution</string>
+
+    <string name="institution">institution</string>
+
+    <string-array name="institutions">
+        <item name="entertainment">გართობა</item>
+        <item name="cars">ავტომობილი</item>
+        <item name="health">ჯანმრთელობა</item>
+        <item name="others">სხვადასხვა</item>
+        <item name="shopping">შოპინგი</item>
+        <item name="finances">ფინანსები</item>
+        <item name="vacation">დასვენება</item>
+        <item name="food_facility">კვება</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
